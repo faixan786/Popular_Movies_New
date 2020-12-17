@@ -20,8 +20,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.casetcollege.popularmovies.Model.Trailer;
 import in.casetcollege.popularmovies.R;
+import in.casetcollege.popularmovies.UI.MoviesDetailsActivity;
+import in.casetcollege.popularmovies.UI.ShowsDetailsActivity;
 
 public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.TrailerViewHolder> {
+    /**
+     * This class is used to hold the information for Trailer Recycler View in
+     * <p> {@link MoviesDetailsActivity} and {@link ShowsDetailsActivity} </p>
+     */
 
     private List<Trailer> trailers;
     private Context context;
@@ -46,7 +52,6 @@ public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.TrailerV
         String YOUTUBE_IMAGE_EXT = "/0.jpg";
         final String YOUTUBE_APP_URI = "vnd.youtube:";
         Picasso.get().load(YOUTUBE_THUMBNAIL_URL + trailer.getKey() + YOUTUBE_IMAGE_EXT)
-                .placeholder(R.drawable.progress_animation)
                 .into(holder.imageView);
         holder.imageView.setOnClickListener(v -> {
             Intent appIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(YOUTUBE_APP_URI + trailer.getKey()));

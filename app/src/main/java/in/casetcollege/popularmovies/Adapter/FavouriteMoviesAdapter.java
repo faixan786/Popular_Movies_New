@@ -20,15 +20,16 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import in.casetcollege.popularmovies.Api.MoviesApi;
 import in.casetcollege.popularmovies.BuildConfig;
 import in.casetcollege.popularmovies.Database.AppDatabase;
 import in.casetcollege.popularmovies.Database.FavouriteMoviesModel;
 import in.casetcollege.popularmovies.Model.Movie;
-import in.casetcollege.popularmovies.Api.MoviesApi;
 import in.casetcollege.popularmovies.NetworkInfo.Network;
 import in.casetcollege.popularmovies.R;
 import in.casetcollege.popularmovies.UI.MoviesDetailsActivity;
 import in.casetcollege.popularmovies.UI.MoviesFavouritesDetails;
+import in.casetcollege.popularmovies.UI.MoviesMainActivity;
 import in.casetcollege.popularmovies.utils.AppExecutors;
 import in.casetcollege.popularmovies.utils.Constants;
 import retrofit2.Call;
@@ -38,6 +39,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class FavouriteMoviesAdapter extends RecyclerView.Adapter<FavouriteMoviesAdapter.FavouriteHolder> {
+    /**
+     * This class is used to hold the information for Recycler View in {@link MoviesMainActivity}
+     */
+
     private List<FavouriteMoviesModel> favouriteMovies;
     private Context context;
 

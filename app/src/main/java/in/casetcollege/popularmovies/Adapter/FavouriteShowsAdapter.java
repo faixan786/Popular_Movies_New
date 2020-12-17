@@ -29,6 +29,7 @@ import in.casetcollege.popularmovies.NetworkInfo.Network;
 import in.casetcollege.popularmovies.R;
 import in.casetcollege.popularmovies.UI.ShowsDetailsActivity;
 import in.casetcollege.popularmovies.UI.ShowsFavouritesDetails;
+import in.casetcollege.popularmovies.UI.ShowsMainActivity;
 import in.casetcollege.popularmovies.utils.AppExecutors;
 import in.casetcollege.popularmovies.utils.Constants;
 import retrofit2.Call;
@@ -38,6 +39,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class FavouriteShowsAdapter extends RecyclerView.Adapter<FavouriteShowsAdapter.FavouriteHolder> {
+    /**
+     * This class is used to hold the information for Recycler View in {@link ShowsMainActivity}
+     */
+
     private List<FavouriteShowsModel> favouriteShows;
     private Context context;
 

@@ -20,9 +20,18 @@ import butterknife.ButterKnife;
 import in.casetcollege.popularmovies.Model.Movie;
 import in.casetcollege.popularmovies.R;
 import in.casetcollege.popularmovies.UI.MoviesDetailsActivity;
+import in.casetcollege.popularmovies.UI.MoviesMainActivity;
+import in.casetcollege.popularmovies.UI.MoviesSearchActivity;
+import in.casetcollege.popularmovies.UI.TrendingMainActivity;
 import in.casetcollege.popularmovies.utils.Constants;
 
 public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder> {
+    /**
+     * This class is used to hold the information for Movies Recycler View in {@link MoviesMainActivity},
+     * <p> SEARCHED Movies Recycler View in {@link MoviesSearchActivity},</p>
+     * <p> SIMILAR Movies Recycler View in {@link MoviesDetailsActivity} </p>
+     * <p> TRENDING Movies Recycler View in {@link TrendingMainActivity} </p>
+     */
 
     private List<Movie> movies;
     private Context context;

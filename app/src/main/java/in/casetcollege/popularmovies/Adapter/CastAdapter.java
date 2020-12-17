@@ -18,8 +18,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.casetcollege.popularmovies.Model.Cast;
 import in.casetcollege.popularmovies.R;
+import in.casetcollege.popularmovies.UI.MoviesDetailsActivity;
+import in.casetcollege.popularmovies.UI.ShowsDetailsActivity;
 
 public class CastAdapter extends RecyclerView.Adapter<CastAdapter.CastViewHolder> {
+    /**
+     * This class is used to hold the information for Cast Recycler View in
+     * <p> {@link MoviesDetailsActivity} and {@link ShowsDetailsActivity} </p>
+     */
+
     private List<Cast> castList;
     private Context context;
 

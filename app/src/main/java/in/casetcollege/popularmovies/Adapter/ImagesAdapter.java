@@ -19,8 +19,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.casetcollege.popularmovies.Model.Image;
 import in.casetcollege.popularmovies.R;
+import in.casetcollege.popularmovies.UI.MoviesDetailsActivity;
+import in.casetcollege.popularmovies.UI.ShowsDetailsActivity;
 
 public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ViewHolder> {
+    /**
+     * This class is used to hold the information for Images Recycler View in
+     * <p> {@link MoviesDetailsActivity} and {@link ShowsDetailsActivity} </p>
+     */
 
     private List<Image> images;
     private Context context;

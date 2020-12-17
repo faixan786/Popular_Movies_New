@@ -15,8 +15,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.casetcollege.popularmovies.Model.Review;
 import in.casetcollege.popularmovies.R;
+import in.casetcollege.popularmovies.UI.MoviesDetailsActivity;
+import in.casetcollege.popularmovies.UI.ShowsDetailsActivity;
 
 public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewHolder> {
+    /**
+     * This class is used to hold the information for Reviews Recycler View in
+     * <p> {@link MoviesDetailsActivity} and {@link ShowsDetailsActivity} </p>
+     */
+
 
     private List<Review> reviewList;
     private Context context;
