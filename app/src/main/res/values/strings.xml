@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="gridtwoColums">GridView 2 Col</string>
+    <string name="gridthreeColums">GridView 3 Col</string>
+    <string name="listtogrid">Gridview</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="favourite_movies">Favourite Movies</string>
+    <string name="popular_shows">Popular Shows</string>
+    <string name="top_rated_shows">Top Rated Shows</string>
+    <string name="favourite_shows">Favourite Shows</string>
+    <string name="Original_title">Original Title</string>
+    <string name="release_date">Release Date</string>
+    <string name="play_button">Play button image</string>
+    <string name="trailerLabel">Trailers</string>
+    <string name="imagesLabel">Photos</string>
+    <string name="similarLabel">Similar to this</string>
+    <string name="castLabel">Cast</string>
+    <!--    <string name="castLabel"><![CDATA[<-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Similar to this -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;]]></string>-->
+    <string name="reviewsLabel">Reviews</string>
+    <string name="nothingInFavourites">Nothing In Favourites</string>
+    <string name="movie_poster_image">Movie Poster Image</string>
+    <string name="overviewLabel">Overview</string>
+    <string name="trending_movies">Trending Movies</string>
+    <string name="trending_shows">Trending Shows</string>
+</resources>

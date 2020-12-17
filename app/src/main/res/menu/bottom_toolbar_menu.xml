@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomToolbarMovies"
+        android:icon="@drawable/movies"
+        android:orderInCategory="100"
+        android:title="Movies"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/bottomToolbarShows"
+        android:icon="@drawable/shows"
+        android:orderInCategory="100"
+        android:title="Shows"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/bottomToolbarTrending"
+        android:icon="@drawable/trending"
+        android:orderInCategory="100"
+        android:title="Trending"
+        app:showAsAction="always" />
+</menu>

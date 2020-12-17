@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_popular"
+            android:title="@string/popular_shows" />
+        <item
+            android:id="@+id/nav_Top_rated"
+            android:title = "@string/top_rated_shows" />
+        <item
+            android:id="@+id/favourites"
+            android:title="@string/favourite_shows"/>
+    </group>
+
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.casetcollege.popularmovies">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_custom_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".UI.MoviesMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.MoviesDetailsActivity"
+            android:label="@string/top_rated_movies"
+            android:parentActivityName=".UI.MoviesMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UI.ShowsDetailsActivity"
+            android:label="@string/top_rated_movies"
+            android:parentActivityName=".UI.ShowsMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UI.MoviesFavouritesDetails"
+            android:label="Favourites detail"
+            android:parentActivityName=".UI.MoviesMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UI.ShowsFavouritesDetails"
+            android:label="Favourites detail"
+            android:parentActivityName=".UI.ShowsMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UI.MoviesSearchActivity"
+            android:label="Search"
+            android:parentActivityName=".UI.MoviesMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".UI.ShowsSearchActivity"
+            android:label="Search"
+            android:parentActivityName=".UI.ShowsMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".UI.ShowsMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:label="Popular Shows"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UI.TrendingMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Trending"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
